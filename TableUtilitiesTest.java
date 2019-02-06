@@ -3,11 +3,19 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+
 /**
  * Created by leon on 1/31/18.
  */
 public class TableUtilitiesTest {
    
+    @Test
+    public void testNumberOfDigits(){
+        int expected = 2;
+        int actual = TableUtilities.numberOfDigits(55);
+        Assert.assertEquals(expected, actual);
+    }
+    
     @Test
     public void testGetMulplicationTable_forOne(){
         String expected = "  1 |\n";
